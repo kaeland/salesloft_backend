@@ -7,6 +7,6 @@ class Api::V1::PeopleController < ApplicationController
     end 
     people = JSON.parse(response.body)
 
-    render json: { people: people }, status: :ok 
+    render json: { people: people, message: "success" }, status: :ok 
   end
 end
